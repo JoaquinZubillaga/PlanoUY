@@ -2,30 +2,40 @@
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Comfortaa", sans-serif;
 }
 
 header{
-    height: 120px;
+    width: 100%;
     position: sticky;
     top: 0;
+    background-color: white;
+    border-radius: 10px;
     
 }
 nav ul{
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 100%;
+    
 }
 nav ul li a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    
 }
+
 li a{
-    padding: 7px;
+    padding: 5px;
     background-color: black;
+    border-radius: 5px;
 }
-a{
-    color: whitesmoke;
-}
+
 nav{
-    background-color: rgb(255, 255, 255);
     text-align: end;
     display: flex;
     flex-direction: column;
@@ -38,6 +48,14 @@ nav{
 h1{
     text-align: center;
 }
+.first-info-home{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    
+
+}
 
 .form-campos{
     display: flex;
@@ -49,11 +67,7 @@ h1{
     padding: auto;
 }
 
-.info-inicio{
-    display: flex;
-    flex-direction: column;
-}
 
 main{
-    padding-top: 200px;
+    padding: 150px;
 }
