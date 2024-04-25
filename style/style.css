@@ -36,9 +36,9 @@ li a{
 }
 
 nav{
-    text-align: end;
-    display: flex;
-    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    
 }
 
 .logo{
@@ -55,6 +55,15 @@ h1{
     font-size: 100px;
     border-radius: 10px;
     
+}
+
+h2{
+   padding: 50px;
+   text-align: center;
+   
+
+
+
 }
 
 .presentation-home{
@@ -77,11 +86,11 @@ h1{
 .maps{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    justify-content: center;
 }
 
 .map-cards:hover{
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     opacity: 0.5;
   }
 
@@ -97,15 +106,27 @@ h1{
     display: flex;
     flex-direction: column;
     padding: 200px;
+    border-radius: 10px;
 }
 
 .form-cuenta{
-    padding: auto;
+    padding: 20px;
 }
 
 
 main{
-    padding: 150px;
+    padding: 70px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+            .maps{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+            }
+    
 }
 
 footer{
