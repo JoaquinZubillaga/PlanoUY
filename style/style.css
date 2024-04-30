@@ -11,6 +11,7 @@ header{
     top: 0;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     
 }
 
@@ -64,13 +65,26 @@ h2{
 }
 
 .presentation-home{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.presentation-home p{
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 1px 1px;
+
 }
     
 .img-home{
     width: 300px;
     height: 300px;
+    border-radius: 10px;
+
 } 
 
 .map-cards{
@@ -83,7 +97,6 @@ h2{
 .map-cards:hover{
     filter: grayscale(50%);
     opacity: 0.5;
-
     
 }
 
