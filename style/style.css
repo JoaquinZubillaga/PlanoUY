@@ -69,6 +69,13 @@ h2{
     font-size: 35px;
 }
 
+h3{
+    background-color: white;
+    border-radius: 5px;
+    background-color: rgb(25, 140, 140);
+    color: white;
+}
+
 .presentation-home{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -80,8 +87,9 @@ h2{
 .presentation-home p{
     background-color: white;
     border-radius: 10px;
-    width: 600px;
+    width: 400px;
     box-shadow: 1px 1px;
+    text-align: center;
 
 }
     
@@ -89,6 +97,7 @@ h2{
     width: 300px;
     height: 300px;
     border-radius: 10px;
+    object-fit: cover;
 
 } 
 
@@ -97,8 +106,13 @@ h2{
     gap: 50px;
     transition: 0.5s;
     
+}
+
+.map-cards img{
+    object-fit: cover;
     
 }
+
 .map-cards:hover{
     filter: grayscale(50%);
     opacity: 0.5;
@@ -110,7 +124,6 @@ h2{
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-content: space-between;
-    object-fit: cover;
     justify-items: center;
 }
 
@@ -119,7 +132,7 @@ h2{
     height: 250px;
     border: 2px solid black;
     border-radius: 5px;
-    overflow: visible;
+    overflow: hidden;
     max-width: 100%;
     
 }
@@ -128,8 +141,11 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
-        
+    align-content: center;   
+}
+
+.product-card img{
+    object-fit: cover;
 }
 
 .product-card{
@@ -148,15 +164,17 @@ h2{
     height: 250px;
     border: 2px solid black;
     border-radius: 5px;
-    overflow: visible;
-    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-.tamaños{
-    width: 500px;
-    height: 800px;
+.tamaños p{
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
@@ -165,7 +183,6 @@ h2{
     flex-direction: column;
     padding: 50px 50px 200px 50px;
     border-radius: 10px;
-    justify-content: center;
    
 }
 
@@ -199,17 +216,58 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: max-content;
+    width: auto;
 }
 
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
             .gallery{
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                justify-content: center;
-
+                display: flex;
+                flex-direction: column;
             }
+            .products{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                flex-direction: column;
+                font-size: 10px;
+                padding: 20px;
+            }
+            h1{
+                font-size: 75px;
+            }
+}
+
+@media (max-width: 961px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header{
+        font-size: 10px;
+    }
+    .presentation-home{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+@media (max-width: 400px){
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    body{
+        padding: 0%;
+    }
 }
 
 footer{
