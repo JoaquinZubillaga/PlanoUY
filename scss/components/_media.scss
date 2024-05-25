@@ -1,0 +1,53 @@
+@media (max-width: 650px) {
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        font-size: 5px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 961px){
+.gallery{
+grid-template-columns: repeat(2, 1fr);
+}
+.products{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+header{
+font-size: 10px;
+}
+.presentation-home{
+display: flex;
+flex-direction: column;
+}
+}
+
+@media (max-width: 400px){
+h1{
+font-size: 40px;
+}
+h2{
+font-size: 20px;
+}
+body{
+padding: 0%;
+}
+header{
+    font-size: 5px;
+    padding: 1px;
+}
+}
+
