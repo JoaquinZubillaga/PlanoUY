@@ -1,0 +1,99 @@
+//base
+@import "base/reset";
+@import "base/vars";
+//components
+@import "components/background";
+@import "components/body";
+@import "components/footer";
+@import "components/h1";
+@import "components/h2";
+@import "components/h3";
+@import "components/header";
+//layouts
+@import "layouts/index";
+@import "layouts/mapas";
+@import "layouts/productos";
+@import "layouts/contacto";
+@import "layouts/crear-cuenta";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+            .gallery{
+                display: flex;
+                flex-direction: column;
+            }
+            .products{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                flex-direction: column;
+                font-size: 10px;
+                padding: 20px;
+            }
+            h1{
+                font-size: 75px;
+            }
+}
+
+@media (max-width: 961px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header{
+        font-size: 10px;
+    }
+    .presentation-home{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px){
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    body{
+        padding: 0%;
+    }
+}
+

@@ -1,0 +1,40 @@
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;   
+}
+
+.product-card img{
+    object-fit: cover;
+}
+
+.product-card{
+    padding: 20px;
+    gap: 50px;
+    transition: 0.5s;
+}
+
+.product-card:hover{
+    filter: grayscale(50%);
+    opacity: 0.5;
+}
+
+.products img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.tamaños p{
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}

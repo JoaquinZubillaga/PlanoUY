@@ -1,0 +1,35 @@
+.map-cards{
+    padding: 20px;
+    gap: 50px;
+    transition: 0.5s;
+    
+}
+
+.map-cards img{
+    object-fit: cover;
+    
+}
+
+.map-cards:hover{
+    filter: grayscale(50%);
+    opacity: 0.5;
+    
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: space-between;
+    justify-items: center;
+}
+
+.gallery img{
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    
+}
